@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(5, 5, 5);
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+}
+
+.bg-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-1{
+    background-image: url(assets/cyberpunk.png);
+}
+
+.img-2{
+    background-image: url(assets/cod.jpg);
+}
+
+.img-3{
+    background-image: url(assets/CSGO.jpg);
+}
+
+.img-4{
+    background-image: url(assets/god-of-war-.jpg);
+}
+
+.img-5{
+    background-image: url(assets/AC.jpg);
+}
+
+.slide{
+    position: relative;
+    height: 80vh;
+    flex: 0.5;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #fff;
+    margin: 10px;
+    transition: all 700ms ease-out;
+}
+
+.slide h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    font-size: 24px;
+}
+
+@media (max-width:480px) {
+    .slide:nth-of-type(4),
+    .slide:nth-of-type(5){
+        display: none;
+    }
+
+}
+
+.slide.active{
+    flex: 5;
+}
+
+.slide.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
