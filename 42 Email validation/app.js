@@ -4,7 +4,7 @@ input.addEventListener('keydown',validate)
 
 function validate(){
     let form = document.querySelector('.main')
-    let pattern = /^[^]+@[^]+\.[a-z]{2,3}$/;
+    let pattern = /^[^@]+@[^@]+\.[a-z]{2,3}$/;
 
     if (input.value.match(pattern)) {
         form.classList.add('valid')
