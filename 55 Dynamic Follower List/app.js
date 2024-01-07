@@ -6,11 +6,9 @@ followers.forEach(counter =>{
     const updateFollowers = ()=>{
         const target = +counter.getAttribute('data-target')
         const c = +counter.innerText
-
         const inc = target / 500
-
         if (c < target){
-            counter.innerHTML = `${Math.ceil(c+inc)}`
+            counter.innerHTML = `${(c+inc)}`
             setTimeout(updateFollowers, 1);
         } else {
             counter.innerHTML = target;
