@@ -76,16 +76,17 @@ let allCharacters = [
     if (inputVal == captcha.innerText) {
       statusTxt.style.color = "Green";
       statusTxt.innerText = "Nice, Captcha Matched";
-      setTimeout(() => {
+    } 
+    else {
+      statusTxt.style.color = "Black";
+      statusTxt.innerText = "Captcha not matched. Please Try Again Later";
+    }
+    setTimeout(() => {
         statusTxt.style.display = "";
         inputField.value = "";
         captcha.innerText = "";
         getCaptcha();
       }, 4000);
-    } else {
-      statusTxt.style.color = "Black";
-      statusTxt.innerText = "Captcha not matched. Please Try Again Later";
-    }
   });
 
   function getCaptcha() {
