@@ -8,7 +8,6 @@ btns.forEach((btn,i) =>{
         btn.classList.add('active')
     })
 })
-
 function abimation() {
     banner.classList.add('zoom')
 
