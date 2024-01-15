@@ -238,7 +238,10 @@ span{
     margin-left: 20px;
 }
 /* form */
-
+.f{
+    display: flex;
+    justify-content: center;
+}
 form{
     width: 50%;
     display: flex;
