@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #d41b27;
+    --black-color: #050505;
+    --main-font: "Playfair Display";
+    --secondary-font: Roboto;
+}
+
+.logo{
+    color: #000;
+    font-family: var(--main-font);
+    margin-left: 4rem;
+}
+
+.highlight{
+    color: var(--main-color);
+}
+
+.main-btn{
+    background: var(--main-color);
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: var(--secondary-font);
+    margin: 10px;
+}
+
+.btn-anim:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.5s ease;
+}
+
+.main-btn1{
+    background: var(--black-color);
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: var(--secondary-font);
+    margin: 10px;
+}
+
+.top{
+    height: 80vh;
+}
+
+.top-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.main-head{
+    color: var(--black-color);
+    font-family: var(--main-font);
+    font-size: 450%;
+    margin: 3rem;
+}
+
+.main-img{
+    width: 35%;
+    height: 35%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* section 2 */
+.delivery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #050505;
+    color: #fff;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.del-img{
+    width: 250px;
+    height: 250px;
+    background-image: url(asstes/img-2.png);
+    background-position: center;
+    background-size: cover;
+    margin-right: 3rem;
+}
+
+.del-content{
+    width: 30rem;
+}
+
+.del-head{
+    font-family: var(--secondary-font);
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.del-subHead{
+    font-family: var(--secondary-font);
+    margin-bottom: 2rem;
+}
+
+.del-btn{
+    border: 1px solid #fff;
+}
+
+/* sec-3 */
+
+.why{
+    height: 100vh;
+    background: #fff;
+    color: #000;
+}
+
+.f-head{
+    text-align: center;
+    margin-top: 10erm;
+    padding-top: 2rem;
+}
+
+.f-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-card{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.c-title{
+    font-family: var(--main-font);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.c-img{
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    margin:auto;
+    background-image: url(asstes/img-2.png);
+        
+}
+
+.c-info{
+    margin: 20px;
+    font-family: var(--secondary-font);
+    text-align: center;
+    line-height: 20px;
+}
+
+.btns{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* sec-4 */
+.testimonial{
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img{
+    background-image: url(https://images.unsplash.com/photo-1671127568987-f0f8d7b6acb8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    width: 26%;
+    height: 30rem;
+    box-shadow: 20px 20px 10px 2px #fff;
+}
+
+.rating{
+    width: 20rem;
+    height: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.name{
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: var(--main-font);
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    height: 40vh;
+}
+
+.footer-card{
+    margin: 0 auto;
+    font-family: var(--secondary-font);
+    font-weight: normal;
+}
+
+.fo-title{
+    margin-bottom: 20px;
+}
+
+.fo-info{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .main-head{
+        font-size: 2rem;
+    }
+    .btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .delivery{
+        text-align: center;
+    }
+    .del-img{
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .del-head{
+        font-size: 2rem;
+    }
+    .del-subHead{
+        font-size: 12px;
+    }
+    .why{
+        height: 120vh;
+    }
+    .c-title{
+        font-size: 1.4rem;  
+    }
+    .user-img{
+        width: 50%;
+        height: 50%;
+    }
+    .rating {
+        margin-bottom: 10rem;
+        align-items: center;
+    }
+    .name{
+        font-size: 20px;
+        margin-top: 20px;
+        font-family: var(--main-font);
+    }
+    footer{
+        margin-top: 5rem;
+    }
+}
