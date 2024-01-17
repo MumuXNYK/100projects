@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-color: #5b5a590e;
+}
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 5rem;
+    color: #fff;
+}
+
+.navhead{
+    margin-left: 5rem;
+    color: #000;
+}
+
+.lines{
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.lines span{
+    height: 4px;
+    border: 2px solid black;
+    margin: 4px;
+}
+/* header */
+header{
+    margin: 6rem;
+}
+
+.main-head{
+    width: 50%;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.main-para{
+    width: 40%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+.bg-gray{
+    background: rgba(53, 53, 53, 0.856);
+    color: #fff;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+
+/* main */
+main{
+    margin: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px; 
+}
+
+main .img{
+    width: 50%;
+}
+/* section1 */
+
+.sec1{
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+.sec1 h1{
+    font-weight: bold;
+}
+
+.sec1 .main-para {
+    margin-bottom: 6rem;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item h1{
+    font-size: 2rem;
+    color: rgba(53, 53, 53);
+    margin-left: 2rem;
+}
+
+.sec1 img{
+    width: 500px;
+    height: 600px;
+    margin: 50px;
+}
+/* footer */
+footer {
+    background: rgba(43,43,43);
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    color: #fff;
+}
+
+footer .logo h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+footer .logo p {
+    max-width: 400px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+footer .about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .about .contains{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.contains h1{
+    margin-bottom: 50px;
+}
+
+.contains p{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .main-head {
+        width: 100%;
+    }
+     .main-para{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .sec1 img {
+        margin: 0;
+        width: 300px;
+        height: 400px;
+        transform: translateX(-30px);
+    }
+    footer{
+        height: 80vh;
+    }
+}
